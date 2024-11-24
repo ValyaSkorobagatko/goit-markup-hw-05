@@ -503,7 +503,12 @@ body {
 }
 .footer-text-subscribe {
   font-weight: 500;
+  margin-bottom: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
 }
+
 .subscribe {
   margin-bottom: 16px;
 }
@@ -686,7 +691,7 @@ body {
 
 .modal-form-input:focus {
   color: #4d5ae5;
-  fill: #4d5ae5;
+  border-color: #4d5ae5;
 }
 
 .modal-form-icon:focus {
@@ -768,7 +773,7 @@ body {
 }
 
 /* Основное состояние чекбокса */
-.input-checkbox {
+.visually-hidden {
   display: none; /* Скрываем стандартный чекбокс */
 }
 /* Стили для кастомного элемента (по умолчанию) */
@@ -801,7 +806,7 @@ body {
 }
 
 /* Изменение цвета иконки при checked */
-.input-checkbox:checked + .text-checkbox .span svg {
+.visually-hidden:checked + .text-checkbox .span svg {
   fill: var(
     --checked-icon-color,
     #f4f4fd
@@ -819,7 +824,7 @@ body {
   margin-right: 8px;
 }
 
-span {
+.span {
   margin-right: 8px;
   width: 16px;
   height: 16px;
