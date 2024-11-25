@@ -775,7 +775,7 @@ body {
 }
 
 /* Основное состояние чекбокса */
-.visually-hidden {
+.input-checkbox visually-hidden {
   display: none; /* Скрываем стандартный чекбокс */
 }
 
@@ -804,14 +804,14 @@ body {
   border: none;
   fill: #f4f4fd;
 }
-.visually-hidden:checked + .span-privacy {
+.input-checkbox visually-hidden:checked + .span-privacy {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
 }
 
 /* Изменение цвета иконки при checked */
-.visually-hidden:checked + .text-checkbox .span-privacy svg {
+.input-checkbox visually-hidden:checked + .text-checkbox .span-privacy svg {
   fill: var(
     --checked-icon-color,
     #f4f4fd
@@ -890,4 +890,9 @@ body {
   text-decoration: underline;
 }
 
+.input-checkbox:checked + .text-checkbox .span-privacy {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
+}
 /* #endregion */
